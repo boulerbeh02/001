@@ -13,7 +13,6 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir --requirement requirements.txt
 
 COPY --chown=bot:bot Bot.py ./
-COPY --chown=bot:bot aliexpress_api ./aliexpress_api
 COPY --chown=bot:bot smoke_test.py ./
 
 USER bot
